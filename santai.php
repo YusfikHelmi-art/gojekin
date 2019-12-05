@@ -11,18 +11,19 @@ $headers[] = 'X-Location: -6.405821,106.064193';
         echo "\e[92m--------------------------------------------------\n";
         echo "\e[92m|              SCRIPT BY ALFARKHAN               |\n";
         echo "\e[92m|            Komunitas Tumbuh Bersama            |\n";
-        echo "\e[92m|     THANK TO mr. alfarkhan & mr. Yusfik Helmi    |\n";
+        echo "\e[92m|     THANK TO mr.alfarkhan & mr.Yusfik Helmi    |\n";
         echo "\e[92m|   SCRIPT GOJEK AUTO REGIST + AUTO SAVE TOKEN   |\n";
         echo "\e[92m|                    GOODLUCK                    |\n";
         echo "\e[92m--------------------------------------------------\n";
         echo "\n";
         ulang:
+        echo "\e[96m[-] Masukan +1 untuk US dan 62 untuk Indo
         echo "\e[96m[+] Input Nomor HP : ";
         $number = trim(fgets(STDIN));
         $numbers = $number[0].$number[1];
         $numberx = $number[5];
         if($numbers == "08") { 
-            $number = str_replace("08","628",$number);
+            $number = str_replace("08","628","+1",$number);
         } elseif ($numberx == " ") {
             $number = preg_replace("/[^0-9]/", "",$number);
             $number = "1".$number;
